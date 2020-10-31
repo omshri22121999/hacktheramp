@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Please fill the details of exchanged cloth : "
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dresswear_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Dresswear Type : "
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@id/dresswear_spv"
+            app:layout_constraintEnd_toEndOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/dresswear_spv" />
+
+        <TextView
+            android:id="@+id/dresstype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Dress Type : "
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/dresstype_spv"
+            app:layout_constraintEnd_toEndOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/dresstype_spv" />
+
+        <TextView
+            android:id="@+id/cloth_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Fabric Type : "
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/cloth_spv"
+            app:layout_constraintEnd_toEndOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/cloth_spv" />
+
+        <TextView
+            android:id="@+id/size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Cloth Size : "
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/size_spv"
+            app:layout_constraintEnd_toEndOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/size_spv" />
+
+        <TextView
+            android:id="@+id/age_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Age of Fabric : "
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/age_spv"
+            app:layout_constraintEnd_toEndOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/age_spv" />
+
+        <TextView
+            android:id="@+id/color_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Fabric Color : "
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/color_btn"
+            app:layout_constraintEnd_toEndOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/color_btn" />
+
+        <TextView
+            android:id="@+id/coloring_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Coloring Type : "
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/coloring_type_spv"
+            app:layout_constraintEnd_toEndOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/coloring_type_spv" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <Spinner
+            android:id="@+id/dresswear_spv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:entries="@array/dress_wear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toBottomOf="@id/heading" />
+
+        <Spinner
+            android:id="@+id/dresstype_spv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:entries="@array/dress_wear"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toBottomOf="@id/dresswear_spv" />
+
+        <Spinner
+            android:id="@+id/cloth_spv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:entries="@array/cloth_types"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toBottomOf="@id/dresstype_spv" />
+
+        <Spinner
+            android:id="@+id/size_spv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:entries="@array/sizes"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toBottomOf="@id/cloth_spv" />
+
+        <Spinner
+            android:id="@+id/age_spv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:entries="@array/age_fabric"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toBottomOf="@id/size_spv" />
+
+        <View
+            android:id="@+id/color_value_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="No Color"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/color_btn"
+            app:layout_constraintEnd_toStartOf="@id/color_btn"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toTopOf="@id/color_btn" />
+
+        <TextView
+            android:id="@+id/color_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="No Color"
+            app:layout_constraintEnd_toStartOf="@id/color_btn"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toBottomOf="@id/color_value_view" />
+
+        <Button
+            android:id="@+id/color_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:text="SCAN"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/age_spv" />
+
+        <Spinner
+            android:id="@+id/coloring_type_spv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:entries="@array/coloring_types"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guide"
+            app:layout_constraintTop_toBottomOf="@id/color_value_tv" />
+
+        <Button
+            android:id="@+id/finish_details_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="NEXT"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coloring_type_spv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

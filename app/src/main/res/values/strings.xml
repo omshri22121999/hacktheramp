@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Hack The Ramp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="dress_wear">
+        <item>None</item>
+        <item>Top Wear</item>
+        <item>Bottom Wear</item>
+    </string-array>
+    <string-array name="topwear_types">
+        <item>None</item>
+        <item>Shirt(Half-Sleeve)</item>
+        <item>Shirt(Full-Sleeve)</item>
+        <item>T-Shirt(Half-Sleeve)</item>
+        <item>T-Shirt(Full-Sleeve)</item>
+        <item>T-Shirt(Sleeveless)</item>
+        <item>Jackets and Coats(Half-Sleeve)</item>
+        <item>Jackets and Coats(Full-Sleeve)</item>
+        <item>Jackets and Coats(Sleeveless)</item>
+        <item>Sweaters and Sweatshirts</item>
+        <item>Blazers and Waistcoats</item>
+        <item>Shrugs</item>
+        <item>Kurtas</item>
+        <item>Kurtis and Tops</item>
+    </string-array>
+    <string-array name="bottomwear_types">
+        <item>None</item>
+        <item>Trousers</item>
+        <item>Shorts</item>
+        <item>Jeggings</item>
+        <item>Skirts and Palazzos</item>
+        <item>Pyjama</item>
+    </string-array>
+    <string-array name="cloth_types">
+        <item>None</item>
+        <item>Cotton</item>
+        <item>Wool</item>
+        <item>Denim</item>
+        <item>Polyester or Polycotton</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="sizes">
+        <item>None</item>
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+
+    <string-array name="age_fabric">
+        <item>None</item>
+        <item>Less than 1 Year</item>
+        <item>1 to 3 Years</item>
+        <item>3 to 5 Years</item>
+        <item>Greater than 5 Years</item>
+    </string-array>
+
+    <string-array name="color_strings">
+        <item>None</item>
+        <item>Black</item>
+        <item>Brown</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Violet</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="coloring_types">
+        <item>None</item>
+        <item>Single Color</item>
+        <item>Multi Color</item>
+    </string-array>
+</resources>
