@@ -1,6 +1,6 @@
 # Hack The Ramp
 Submission for Myntra Hacker Ramp by Team "Hack The Ramp"
 
-APK file is present [here](hackramp.apk)
+APK file is present [here](hackramp.apk).
 
-Financials is present [here](IITMadras_HackTheRamp_Financials.pdf)
+Financials for recycling is present [here](IITMadras_HackTheRamp_Financials.pdf).
